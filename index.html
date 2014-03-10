@@ -6,7 +6,14 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <script src="js/jquery.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".linked").click(function() {
+                window.document.location = $(this).attr("href");
+            });
+        });
+    </script>
 
     <title>tommysdk</title>
   </head>
@@ -30,31 +37,56 @@
           <div class="contributionsTable">
               <table>
                   <tr><td>Project</td><td>Issue</td><td>Title</td><td>Resolved</td></tr>
-                  <tr><td>Arquillian</td><td>ARQ-1680</td><td>Tomcat 7 embedded adapter should be built against 7.0.52</td><td>2014-03-07</td></tr>
-                  <tr><td>Apache TomEE</td><td>OPENEJB-2071</td><td>Validation: Check for proper @Asynchronous usage</td><td>2014-02-27</td></tr>
-                  <tr><td>Arquillian</td><td>ARQ-1154</td><td>parameter "servletName" not used</td><td>2013-05-28</td></tr>
-                  <tr><td>Arquillian</td><td>ARQ-863</td><td>Poor error message when WebArchive deployed with ".jar" name</td><td>2013-06-03</td></tr>
-                  <tr><td>Arquillian</td><td>ARQ-991</td><td>Misspelled error message in Deploy goal</td><td>2013-02-02</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-407</td><td>Archive.toString might throw java.lang.IndexOutOfBoundsException</td><td>2012-05-18</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-377</td><td>ZipExporter.exportTo(java.io.File target) does not fail when target exists.</td><td>2012-07-30</td></tr>
-                  <tr><td>Apache Cassandra</td><td>CASSANDRA-4398</td><td>Incorrect english for cassandra-cli help</td><td>2012-07-27</td></tr>
-                  <tr><td>Arquillian</td><td>ARQ-632</td><td>org.jboss.arquillian.container.spi.client.protocol.metadata.JMXContext should close the JMXConnector when use of MBeanServerConnection is complete</td><td>2012-04-10</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-348</td><td>Deleting a directory specified by a File with a trailing slash does not work</td><td>2012-03-17</td></tr>
-                  <tr><td>Apache Cassandra</td><td>CASSANDRA-3509</td><td>cassandra-cli shows org.apache.Cassandra.XXX in example help for replication strategy but it should be cassandra with a lowercase c</td><td>2012-03-05</td></tr>
-                  <tr><td>Apache Cassandra</td><td>CASSANDRA-3381</td><td>StorageProxy does not log correctly when schema is not in agreement</td><td>2011-10-25</td></tr>
-                  <tr><td>JBoss Application Server 7</td><td>AS7-608</td><td>BoundedQueueThreadPoolService provides Executor instead of ExecutorService</td><td>2011-08-26</td></tr>
-                  <tr><td>ShrinkWrap Descriptors</td><td>SHRINKDESC-59</td><td>Get coverage of NodeTestCase to cover all methods in Node</td><td>2011-07-26</td></tr>
-                  <tr><td>ShrinkWrap Descriptors</td><td>SHRINKDESC-18</td><td>DescriptorImporter.from(InputStream) should close the IS by default, have option to leave open</td><td>2011-08-02</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-298</td><td>Add "addAsLibraries(Archive&lt;?&gt;[]... archives)" to LibraryContainer</td><td>2011-07-21</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-282</td><td>Should be able to 'disable' central in MavenDependenciesResolver</td><td>2011-06-30</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-301</td><td>aether-connector-wagon -&gt; depends on plexus-container-default which has junit:junit in compile scope</td><td>2011-07-14</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-300</td><td>filename with whitespace produce errors on windows</td><td>2011-07-12</td></tr>
-                  <tr><td>ShrinkWrap Descriptors</td><td>SHRINKDESC-48</td><td>WebAppDescriptor maps securityConstraint(displayName) to element "name", should be display-name</td><td>2011-07-11</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-253</td><td>ClassAsset / ClassLoaderAsset should not use TCCL</td><td>2011-05-31</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-191</td><td>Automatic creation of MANIFEST.MF</td><td>2011-05-31</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-266</td><td>Manifest container for WebArchive should be WEB-INF/classes/META-INF</td><td>2011-05-31</td></tr>
-                  <tr><td>ShrinkWrap</td><td>SHRINKWRAP-235</td><td>Add writeTo methods to Archive</td><td>2011-04-07</td></tr>
-                  <tr><td>Apache Cassandra</td><td>CASSANDRA-1257</td><td>Remove @Override annotations when implementing interfaces</td><td>2011-03-08</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/ARQ-1680'>
+                      <td>Arquillian</td><td>ARQ-1680</a></td><td>Tomcat 7 embedded adapter should be built against 7.0.52</td><td>2014-03-07</td></tr>
+                  <tr class='linked' href='https://issues.apache.org/jira/browse/OPENEJB-2071'>
+                      <td>Apache TomEE</td><td>OPENEJB-2071</td><td>Validation: Check for proper @Asynchronous usage</td><td>2014-02-27</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/ARQ-1154'>
+                      <td>Arquillian</td><td>ARQ-1154</td><td>parameter "servletName" not used</td><td>2013-05-28</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/ARQ-863'>
+                      <td>Arquillian</td><td>ARQ-863</td><td>Poor error message when WebArchive deployed with ".jar" name</td><td>2013-06-03</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/ARQ-991'>
+                      <td>Arquillian</td><td>ARQ-991</td><td>Misspelled error message in Deploy goal</td><td>2013-02-02</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-407'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-407</td><td>Archive.toString might throw java.lang.IndexOutOfBoundsException</td><td>2012-05-18</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-377'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-377</td><td>ZipExporter.exportTo(java.io.File target) does not fail when target exists.</td><td>2012-07-30</td></tr>
+                  <tr class='linked' href='https://issues.apache.org/jira/browse/CASSANDRA-4398'>
+                      <td>Apache Cassandra</td><td>CASSANDRA-4398</td><td>Incorrect english for cassandra-cli help</td><td>2012-07-27</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/ARQ-632'>
+                      <td>Arquillian</td><td>ARQ-632</td><td>org.jboss.arquillian.container.spi.client.protocol.metadata.JMXContext should close the JMXConnector when use of MBeanServerConnection is complete</td><td>2012-04-10</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-348'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-348</td><td>Deleting a directory specified by a File with a trailing slash does not work</td><td>2012-03-17</td></tr>
+                  <tr class='linked' href='https://issues.apache.org/jira/browse/CASSANDRA-3509'>
+                      <td>Apache Cassandra</td><td>CASSANDRA-3509</td><td>cassandra-cli shows org.apache.Cassandra.XXX in example help for replication strategy but it should be cassandra with a lowercase c</td><td>2012-03-05</td></tr>
+                  <tr class='linked' href='https://issues.apache.org/jira/browse/CASSANDRA-3381'>
+                      <td>Apache Cassandra</td><td>CASSANDRA-3381</td><td>StorageProxy does not log correctly when schema is not in agreement</td><td>2011-10-25</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/AS7-608'>
+                      <td>JBoss Application Server 7</td><td>AS7-608</td><td>BoundedQueueThreadPoolService provides Executor instead of ExecutorService</td><td>2011-08-26</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKDESC-59'>
+                      <td>ShrinkWrap Descriptors</td><td>SHRINKDESC-59</td><td>Get coverage of NodeTestCase to cover all methods in Node</td><td>2011-07-26</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKDESC-18'>
+                      <td>ShrinkWrap Descriptors</td><td>SHRINKDESC-18</td><td>DescriptorImporter.from(InputStream) should close the IS by default, have option to leave open</td><td>2011-08-02</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-298'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-298</td><td>Add "addAsLibraries(Archive&lt;?&gt;[]... archives)" to LibraryContainer</td><td>2011-07-21</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-282'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-282</td><td>Should be able to 'disable' central in MavenDependenciesResolver</td><td>2011-06-30</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-301'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-301</td><td>aether-connector-wagon -&gt; depends on plexus-container-default which has junit:junit in compile scope</td><td>2011-07-14</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-300'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-300</td><td>filename with whitespace produce errors on windows</td><td>2011-07-12</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKDESC-48'>
+                      <td>ShrinkWrap Descriptors</td><td>SHRINKDESC-48</td><td>WebAppDescriptor maps securityConstraint(displayName) to element "name", should be display-name</td><td>2011-07-11</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-253'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-253</td><td>ClassAsset / ClassLoaderAsset should not use TCCL</td><td>2011-05-31</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-191'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-191</td><td>Automatic creation of MANIFEST.MF</td><td>2011-05-31</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-266'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-266</td><td>Manifest container for WebArchive should be WEB-INF/classes/META-INF</td><td>2011-05-31</td></tr>
+                  <tr class='linked' href='https://issues.jboss.org/browse/SHRINKWRAP-235'>
+                      <td>ShrinkWrap</td><td>SHRINKWRAP-235</td><td>Add writeTo methods to Archive</td><td>2011-04-07</td></tr>
+                  <tr class='linked' href='https://issues.apache.org/jira/browse/CASSANDRA-1257'>
+                      <td>Apache Cassandra</td><td>CASSANDRA-1257</td><td>Remove @Override annotations when implementing interfaces</td><td>2011-03-08</td></tr>
               </table>
           </div>
         <br/>

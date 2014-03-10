@@ -178,6 +178,10 @@ td {
   padding: 5px 10px;
 }
 
+tr.linked {
+    cursor: pointer;
+}
+
 hr {
   height: 0;
   border: 0;
