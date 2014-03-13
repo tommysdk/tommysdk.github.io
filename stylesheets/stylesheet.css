@@ -324,6 +324,11 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
+.twitter-follow-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* Links
    a, a:hover, a:visited
 */
