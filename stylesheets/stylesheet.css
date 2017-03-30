@@ -1,14 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
+  background: #dddddd 0 0;
+  color: #000000;
   font: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
 }
-
-/* General & 'Reset' Stuff */
 
 .container {
   width: 90%;
@@ -29,50 +27,45 @@ li {
   line-height: 1.4 ;
 }
 
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
-
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: #bbbbbb;
   width: 100%;
-  border-bottom: 1px dashed #b5e853;
-  padding: 20px 0;
-  margin: 0 0 40px 0;
+  /*border-bottom: 1px solid #000000;*/
+  padding: 10px 0;
+  margin: 0 0 20px 0;
 }
 
 header h1 {
   font-size: 30px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0 0 0 0;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+  color: #000000;
+  letter-spacing: 0px;
   -webkit-font-smoothing: antialiased;
-}
-
-header h1:before {
-  content: "~ ";
-  font-size: 24px;
 }
 
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
+  color: #000000;
 }
 
 footer {
-    width: 100%;
-    border-top: 1px dashed #b5e853;
-    padding: 20px 0;
-    text-align: center;
+  background: #bbbbbb;
+  width: 100%;
+  /*border-top: 1px solid #000000;*/
+  padding: 10px 0;
+  text-align: center;
+}
+
+a {
+  color: #555;
+}
+
+header a {
+  text-decoration: none;
 }
 
 #downloads .btn {
@@ -81,25 +74,20 @@ footer {
   margin: 0;
 }
 
-/* Main Content
-*/
-
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
 section img {
   max-width: 100%
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+  color: #000000;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 #main_content h1 {
@@ -127,13 +115,13 @@ h1, h2, h3, h4, h5, h6 {
 #main_content h6 {
   font-size: 12px;
   text-transform: uppercase;
-  color: #999;
+  color: #000000;
   margin: 0 0 5px 0;
 }
 
 #main_content p {
     font-size: 12px;
-    color: #ffffff;
+    color: #000000;
     margin: 0 0 5px 0;
 }
 
@@ -146,36 +134,6 @@ ul li {
   list-style: none;
 }
 
-ul li:before {
-  content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
-  color: #b5e853;
-  margin-left: -37px;
-  margin-right: 21px;
-  line-height: 16px;
-}
-
-blockquote {
-  color: #aaa;
-  padding-left: 10px;
-  border-left: 1px dotted #666;
-}
-
-pre {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px;
-  font-size: 14px;
-  color: #b5e853;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  text-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
-}
-
 table {
   width: 100%;
   margin: 0 0 20px 0;
@@ -183,7 +141,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed #000000;
   padding: 5px 10px;
 }
 
@@ -198,16 +156,15 @@ tr.linked {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
+  border-bottom: 1px dashed #000000;
+  color: #000000;
 }
-
 
 /* Contributions */
 .contributionsTable {
     margin:0px;padding:0px;
     width:100%;
-    border:1px solid #151515;
+    border:1px solid #000000;
 
     -moz-border-radius-bottomleft:0px;
     -webkit-border-bottom-left-radius:0px;
@@ -249,22 +206,22 @@ hr {
      -webkit-border-bottom-left-radius:0px;
      border-bottom-left-radius:0px;
 }.contributionsTable tr:hover td{
-      background-color:#202020;
+      background-color:#cccccc;
 }
 
 .contributionsTable td{
     vertical-align:middle;
 
-    background-color:#151515;
+    background-color:#ffffff;
 
-    border:1px solid #151515;
+    border:1px solid #000000;
     border-width:0px 1px 1px 0px;
     text-align:left;
     padding:5px;
     font-size:10px;
-    font-family:Verdana;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
     font-weight:normal;
-    color:#b5e853;
+    color:#000000;
 }.contributionsTable tr:last-child td{
      border-width:0px 1px 0px 0px;
  }.contributionsTable tr td:last-child{
@@ -273,25 +230,25 @@ hr {
        border-width:0px 0px 0px 0px;
    }
 .contributionsTable tr:first-child td{
-    background:-o-linear-gradient(bottom, #151515 5%, #151515 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #151515), color-stop(1, #151515) );
-    background:-moz-linear-gradient( center top, #151515 5%, #151515 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#151515", endColorstr="#151515");	background: -o-linear-gradient(top,#151515,151515);
+    background:-o-linear-gradient(bottom, #151515 5%, #151515 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #151515) );
+    background:-moz-linear-gradient( center top, #000000 5%, #000000 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000");	background: -o-linear-gradient(top,#000000,000000);
 
-    background-color:#151515;
-    border:0px solid #151515;
+    background-color:#000000;
+    border:0px solid #000000;
     text-align:left;
     border-width:0px 0px 1px 1px;
     font-size:14px;
-    font-family:Verdana;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
     font-weight:normal;
-    color:#eaeaea;
+    color:#ffffff;
 }
 .contributionsTable tr:first-child:hover td{
     background:-o-linear-gradient(bottom, #151515 5%, #151515 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #151515), color-stop(1, #151515) );
     background:-moz-linear-gradient( center top, #151515 5%, #151515 100% );
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#151515", endColorstr="#151515");	background: -o-linear-gradient(top,#151515,151515);
 
-    background-color:#151515;
+    background-color:#000000;
 }
 .contributionsTable tr:first-child td:first-child{
     border-width:0px 0px 1px 0px;
@@ -311,7 +268,7 @@ hr {
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 13px;
@@ -333,26 +290,13 @@ hr {
 }
 
 .btn-github .icon {
-  opacity: 0.6;
+  opacity: 1;
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
 .twitter-follow-button {
     display: inline-block;
     vertical-align: middle;
-}
-
-/* Links
-   a, a:hover, a:visited
-*/
-
-a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
-}
-
-header a {
-  text-decoration: none;
 }
 
 /* Clearfix */
