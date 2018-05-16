@@ -73,6 +73,11 @@ header a {
   text-decoration: none;
 }
 
+.inline {
+    font-size: 12px;
+    margin: 0 0 5px 0;
+}
+
 #downloads .btn {
   display: inline-block;
   text-align: center;
