@@ -1,88 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
 
     <title>tynja.com - Tommy Tynj&auml;</title>
-  </head>
+</head>
 
   <body>
-    <header>
-      <div class="container">
-        <h1>Tommy Tynj&auml;</h1>
-        <p><a href="index.html">Home</a>&nbsp;|&nbsp;<a href="skills.html">Skills</a>&nbsp;|&nbsp;<a href="presentations.html">Presentations</a>&nbsp;|&nbsp;<a href="events.html">Events</a>&nbsp;|&nbsp;<a href="blog.html">Blog articles</a>&nbsp;|&nbsp;<a href="opensource.html">Open source</a></p>
-      </div>
-    </header>
+  <div class="header">
+      <h1>Tommy Tynj&auml;</h1>
+      <div class="minimal"><p>Software engineering and leadership</p></div>
+  </div>
+  <div class="links">
+      <h5><a href="index.html">Home</a>&nbsp;|&nbsp;<a href="skills.html">Skills</a>&nbsp;|&nbsp;<a href="blog.html">Blog</a>&nbsp;|&nbsp;<a href="presentations.html">Presentations</a>&nbsp;|&nbsp;<a href="events.html">Events</a>&nbsp;|&nbsp;<a href="opensource.html">Open source</a></h5>
+  </div>
 
     <div class="container">
-       <section id="main_content">
-          <h2>Skills</h2>
+        <section id="main_content">
+            <h2 class="underline">Skills</h2>
+            <h3>Leadership and management</h3>
+            <p>Working in the Engineering Management function at Spotify since August 2019. Before that, I was part of the management team at Diabol for 5.5 years, a Swedish consultancy focusing on continuous delivery and DevOps.
+                10 years background in consulting, with extensive experience in coaching and leading organizations through change and continuous improvement processes.</p>
+        </section>
+        <section id="main_content">
           <h3>Continuous Delivery and DevOps methodologies</h3>
-          <p>Over six years of experience implementing continuous delivery pipelines,
-            coaching on continuous delivery and DevOps best practices and ways of working.</p>
+          <p>Years of experience implementing continuous delivery pipelines, coaching on continuous delivery and DevOps best practices and ways of working.</p>
        </section>
        <section id="main_content">
-          <h3>Leadership and management</h3>
-          <p>Engineering Manager at Spotify since autumn 2019. Been part of the management team at Diabol, a Swedish consultancy focusing on continuous delivery and DevOps, for over five years.
-             Working for 10+ years as a consultant, with extensive experience in coaching and leading organizations through change and improvement processes.</p>
-       </section>
-       <section id="main_content">
-          <h3>Cloud: Amazon Web Services (AWS) & Google Cloud Platform (GCP)</h3>
-          <p>Several years of hands-on experience developing and setting up systems running on the AWS platform, including automated
-             provisioning and deployment orchestration on AWS using the AWS APIs and CLI tools.
-             AWS certified associate level solutions architect March 2016-2018. Experience with CloudFormation, EC2, ELB,
-             Auto-scaling, DynamoDB, RDS, S3, VPC, IAM, Kinesis, SNS, SQS, Cloudwatch.</p>
-          <br/>
-          <p>Experience developing software running on GCP using Google Compute Engine, Cloud SQL, IAM, GCS.</p>
+          <h3>Cloud</h3>
+          <p>Amazon Web Services (AWS)</p>
+          <ul>
+            <li>Several years of hands-on experience engineering systems running on the AWS platform, including automated provisioning and deployment orchestration on AWS using the AWS APIs and CLI tools.</li>
+            <li>AWS certified associate level solutions architect March 2016-2018.</li>
+            <li>AWS experience includes CloudFormation, EC2, ELB, auto-scaling, DynamoDB, RDS, S3, VPC, IAM, Kinesis, SNS, SQS, Cloudwatch.</li>
+          </ul>
+          <p>Google Cloud Platform (GCP)</p>
+          <ul>
+            <li>Engineering systems at Spotify scale running on the GCP platform, such as our lyrics and trending searches features.</li>
+            <li>Experience in GCP technologies such as Google Compute Engine, Cloud SQL, IAM, GCS.</li>
+          </ul>
        </section>
        <section id="main_content">
           <h3>Distributed systems and microservices</h3>
           <p>Over five years of experience developing distributed systems in a microservice oriented architecture.
-          This includes designing systems with massive load, taking in to account high availability, fault tolerance,
+          This includes designing systems handling significant load, taking in to account high availability, fault tolerance,
           zero downtime deployments, metrics, monitoring, tracing and observability paradigms.</p>
        </section>
        <section id="main_content">
-          <h3>Docker</h3>
-          <p>Five years of experience running production workloads using Docker.</p>
+          <h3>Container technology</h3>
+          <p>Over five years of experience running production workloads on container orchestration platforms using Docker, e.g. on Kubernetes.</p>
        </section>
        <section id="main_content">
           <h3>Java, Scala, Groovy</h3>
-          <p>Been developing production systems running on the Java platform for over 10 years, using both Java, Scala and Groovy.</p>
+          <p>Over 10 years of experience engineering production systems running on the Java platform, primarily using Java, but also Scala and Groovy.</p>
        </section>
        <section id="main_content">
           <h3>Technologies</h3>
-          <p>* Infrastructure as Code, immutable Infrastructure</p>
-          <p>* Integration (REST, SOAP, JMS, Apache Camel, MQ and more)</p>
-          <p>* Frameworks (Java EE, Spring, Dropwizard etc)</p>
-          <p>* Build tools (Jenkins, Maven, Gradle, SBT etc)</p>
-          <p>* Version control systems (e.g. Git, Subversion)</p>
-          <p>* Application servers (e.g. Tomcat, TomEE, JBoss)</p>
-          <p>* Databases (PostgreSQL, DynamoDB, MongoDB, Microsoft SQL Server, Oracle etc)</p>
-          <p>* Operating systems (Linux, Windows Server, Mac OS X)</p>
+            <ul>
+              <li>Infrastructure as Code, immutable Infrastructure</li>
+              <li>Integration (REST, SOAP, JMS, Apache Camel, MQ and more)</li>
+              <li>Frameworks (Java EE, Spring, Dropwizard etc)</li>
+              <li>Build tools (Jenkins, Maven, Gradle, SBT etc)</li>
+              <li>Version control systems (e.g. Git, Subversion)</li>
+              <li>Application servers (e.g. Tomcat, TomEE, JBoss)</li>
+              <li>Databases (PostgreSQL, DynamoDB, MongoDB, Microsoft SQL Server, Oracle etc)</li>
+              <li>Operating systems (Linux, Windows Server, Mac OS X)</li>
+            </ul>
        </section>
        <section id="main_content">
           <h3>Processes and ways of working</h3>
-          <p>* Continuous Delivery and DevOps</p>
-          <p>* Lean, Agile</p>
-          <p>* Kanban, Scrum</p>
-          <p>* Pair programming</p>
-          <p>* Mob programming</p>
-          <p>* Test-driven development</p>
-          <p>* Clean code</p>
+            <ul>
+              <li>Continuous Delivery and DevOps</li>
+              <li>Lean, Agile, Kanban, Scrum</li>
+              <li>Pairprogramming, Mob programming</li>
+              <li>Test-driven development</li>
+              <li>Clean code</li>
+            </ul>
        </section>
     </div>
 
-    <footer>
-        <p>© Tommy Tynj&auml; 2020</p>
-        <section id="downloads">
-            <a href="https://github.com/tommysdk" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-            <a href="https://twitter.com/tommysdk" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @tommysdk</a>
-        </section>
-    </footer>
-
+    <div class="footer">
+      <a href="https://se.linkedin.com/in/tynja" target="_blank">Follow or contact me on LinkedIn</a> |
+      <a href="https://github.com/tommysdk" target="_blank">GitHub profile</a>
+      <p class="copyright">© Tommy Tynj&auml; 2022</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
   </body>
 </html>
