@@ -1,16 +1,19 @@
 :root {
-    --primary-color: #751a9c;
-    --primary-light: #d166ff;
-    --primary-lighter: #edabff;
-    --background-dark: #000000;
+    --primary-color: #0d9488;
+    --primary-light: #14b8a6;
+    --primary-lighter: #2dd4bf;
+    --background-dark: #f8fafc;
     --text-light: #ffffff;
-    --text-muted: #eeeeee;
+    --text-dark: #1e293b;
+    --text-muted: #475569;
     --transition-speed: 0.3s;
+    --surface-color: #ffffff;
+    --border-color: #e2e8f0;
 }
 
 body {
     background: var(--background-dark);
-    color: var(--text-muted);
+    color: var(--text-dark);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -40,16 +43,18 @@ a:hover {
     color: var(--text-light);
     text-align: center;
     padding: 2rem 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .links {
-    background: var(--background-dark);
-    color: var(--text-light);
+    background: var(--surface-color);
+    color: var(--text-dark);
     text-align: center;
     margin: 1.5rem auto;
     max-width: 800px;
-    padding: 0 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .header .minimal p {
@@ -63,15 +68,16 @@ a:hover {
 }
 
 .footer {
-    background: var(--primary-color);
-    color: var(--text-light);
+    background: var(--surface-color);
+    color: var(--text-dark);
     text-align: center;
     padding: 1.5rem 1rem;
     margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer a {
-    color: var(--primary-lighter);
+    color: var(--primary-color);
     text-align: center;
 }
 
